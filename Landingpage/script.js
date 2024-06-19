@@ -9,19 +9,6 @@ menu.onclick = () => {
 window.onscroll = () => {
     navbar.classList.remove('active');
 }
-// Dark Mode
-let darkmode = document.querySelector('#darkmode');
-
-darkmode.onclick = () => {
-    if(darkmode.classList.contains('bx bx-moon')){
-        darkmode.classList.replace('bx bx-moon','bx bx-sun');
-        document.body.classList.add('active');
-    }else{
-        darkmode.classList.replace('bx bx-sun','bx bx-moon');
-        document.body.classList.remove('active');
-    }
-}
-
 // Scroll Reveal
 const sr = ScrollReveal ({
     origin: 'top',
